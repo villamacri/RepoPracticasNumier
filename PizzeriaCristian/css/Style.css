@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  letter-spacing: 0.25px;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fondo.png);
+  background-size: 1920px;
+  color: white;
+  width: 100%;
+  
+}
+
+.titulo1 {
+  text-shadow: 1.7px 1px #000;
+  margin-top: 8%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 8px;
+  width: 15%;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+}
+.caja-verde {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  width: 13%;
+  margin-left: 43.5%;
+  margin-right: 43.5%;
+  background-color: #546222;
+  font-size: 30px;
+  text-align: right;
+  border-radius: 8px;
+  position: relative;
+}
+.masakali {
+  margin-top: 5%;
+}
+.caja-verde p {
+  margin-right: 5%;
+}
+
+hr {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+.texto1{
+  position: relative;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  line-height: 2.5;
+  text-align: center;
+}
+.language{
+    text-align: center;
+}
+.language a img{
+  width: 2%;
+}
+.boton{
+  width: 20%;
+  margin-top: 3%;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.boton button{
+    background-color: rgb(25, 194, 216);
+    font-size: 15pt;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    border-radius: 10px;
+}
+.texto2{
+    margin-top: 2%;
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    line-height: 1.5;
+    text-align: center;
+}
