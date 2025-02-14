@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  letter-spacing: 0.25px;
+  background-color: #40442c;
+  text-shadow: 1.7px 1px #000;
+  background-image: url(../img/fondo.webp);
+  background-size: cover;
+}
+.titulo1 {
+  margin-top: 5%;
+  text-align: center;
+  color: #e8ebe2;
+}
+a {
+  cursor: default;
+  text-decoration: none;
+}
+.caja-verde {
+  background-color: #586424;
+  border-radius: 9px;
+  color: #fff;
+  padding: 30px;
+  display: block;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  text-shadow: none;
+}
+.MASAKALI {
+  display: block;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 30px;
+}
+.Pizza {
+  text-transform: lowercase;
+  font-size: 20px;
+  margin-top: -6px;
+  text-align: right;
+}
+hr {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.CDB {
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: -2px;
+  font-size: 25px;
+}
+
+.texto p {
+  text-align: center;
+  margin: 25px;
+  color: #e8ebe2;
+  font-size: 13px;
+}
+.language img {
+  height: 40px;
+  width: 40px;
+}
+.language {
+  display: block;
+  text-align: center;
+}
+.language a {
+  margin-right: 2px;
+}
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #08a4ac;
+  color: #e8ebe2;
+  font-size: 17px;
+
+  width: 350px;
+  height: 60px;
+}
+button:hover {
+  background-color: #0e6e75;
+  cursor: pointer;
+  transition: 0.1s ease;
+}

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, sans-serif;
+  letter-spacing: 0.25px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.menu {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/fondo.webp);
+  background-size: cover;
+  background-position: 4px;
+  width: 70%;
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 0 0 15px 15px;
+    
+}
+.margen {
+  margin-bottom: 80px;
+}
+.seleccion_productos {
+    
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-left: 15%;
+  margin-right: auto;
+  width: 50%;
+
+}
+.seleccion_productos a:focus {
+    border: 1px solid #000;
+}
+.seleccion_productos a {
+  color: #999484;
+  font-size: 20px;
+}
+.destacados {
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+  margin-left: 15%;
+  width: 50%;
+}
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  color: #fff;
+}
+.postre {
+  margin-top: 5px;
+  margin-left: 15%;
+}
+.postre img {
+  width: 15%;
+
+  border-radius: 15px;
+}
+.postre {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 15%;
+}
+
+.relacion p {
+  position: absolute;
+
+  top: 10%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.relacion h3 {
+  position: absolute;
+
+  top: 20%;
+  left: 3.8%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.combos {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 15%;
+  width: 50%;
+}
+.combos img {
+  width: 15%;
+  border-radius: 15px;
+}
+.combos p {
+  position: absolute;
+  font-size: large;
+  top: 25%;
+  left: 15%;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.pizzas {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 15%;
+  width: 50%;
+  font-size: smaller;
+  color: #999484;
+}
+.pizzapormitades{
+    position: relative;
+  margin-top: 5px;
+  margin-left: 15%;
+  width: 50%;
+  left: 10%;
+}
+.flecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
