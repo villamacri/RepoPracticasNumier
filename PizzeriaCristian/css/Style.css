@@ -5,85 +5,109 @@
 }
 
 body {
-  font-family: Montserrat, Arial, sans-serif;
-  letter-spacing: 0.25px;
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fondo.png);
-  background-size: 1920px;
-  color: white;
   width: 100%;
-  
+  font-family: Montserrat, Arial, sans-serif;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fondo.png);
+  letter-spacing: 0.25px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .titulo1 {
   text-shadow: 1.7px 1px #000;
-  margin-top: 8%;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  margin-top: 8%;
   padding-bottom: 8px;
-  width: 15%;
-  margin-left: 42.5%;
-  margin-right: 42.5%;
+  width: 100%;
+  font-size: 15pt;
 }
 .caja-verde {
+  display: block;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   width: 13%;
-  margin-left: 43.5%;
-  margin-right: 43.5%;
+  min-width: 270px;
+  min-height: 180px;
   background-color: #546222;
-  font-size: 30px;
-  text-align: right;
+  margin: auto;
   border-radius: 8px;
-  position: relative;
+  text-align: right;
+  font-size: 30px;
 }
 .masakali {
-  margin-top: 5%;
+  padding-top: 20px;
+  text-align: center;
+  transform: scaleY(1.5);
+  letter-spacing: 5px;
+  font-size: 25pt;
+  font-weight: 700;
+  width: 80%;
+  margin: auto;
 }
-.caja-verde p {
-  margin-right: 5%;
+.pizza {
+  font-size: 18pt;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 10px;
+  text-align: right;
+  width: 80%;
+  margin-bottom: 25px;
+}
+.cdb {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 700;
+  letter-spacing: 0px;
+  transform: scaleY(1.5);
 }
 
 hr {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
+  margin: auto;
+  width: 80%;
 }
-.texto1{
-  position: relative;
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%;
+.texto1 {
   line-height: 2.5;
   text-align: center;
+  position: relative;
+  width: 100%;
+  margin: auto;
 }
-.language{
-    text-align: center;
+.language {
+  text-align: center;
 }
-.language a img{
+.language a img {
   width: 2%;
+  min-width: 40px;
 }
-.boton{
+.boton {
   width: 20%;
   margin-top: 3%;
   text-align: center;
   margin-left: 40%;
   margin-right: 40%;
 }
-.boton button{
-    background-color: rgb(25, 194, 216);
-    font-size: 15pt;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: white;
-    border-radius: 10px;
+.boton button {
+  background-color: rgb(25, 194, 216);
+  font-size: 15pt;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
-.texto2{
-    margin-top: 2%;
-    position: relative;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    line-height: 1.5;
-    text-align: center;
+.texto2 {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 1.5;
+  text-align: center;
 }
