@@ -1,153 +1,162 @@
-header{
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fondo.png);
-    width: 70%;
-    padding-bottom: 50px;
-    margin-top: -30px;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-radius: 15px;
-    background-position: 0px;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    color: white;
-    position: fixed;
+.encabezado {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 10px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
 }
-header h1{
-    font-size: 20pt;
-    padding-top: 20px;
-    padding-left: 50px;
-    color: rgb(230, 228, 228);
-}
-header p{
-    font-size: 10pt;
-    padding-left: 50px;
-    margin-top: -15px;
-    color: rgb(173, 171, 171);
-}
-nav{
-    background-color: white;
-    display: flex;
-    justify-content: left;
-    width: 70%;
-    margin: auto;
-    flex-wrap: nowrap;
-    overflow-x:scroll;
-    min-width: 1000px;
-    position: fixed;
-    top:100px;
-    left: 15%;
-    right: 15%;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 1200px;
 
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fondo.png);
+  width: 70%;
+  padding-bottom: 50px;
+  margin: auto;
+  margin-top: -30px;
+  border-radius: 15px;
+  background-position: 0px;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: white;
 }
-nav li{
-    margin: 0 10px;
-    margin-top: 20px;
+header h1 {
+  font-size: 20pt;
+  padding-top: 20px;
+  padding-left: 50px;
+  color: rgb(230, 228, 228);
 }
-nav a{
-    color: rgb(173, 171, 171);
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16pt;
-    letter-spacing: 1px;
-
+header p {
+  font-size: 10pt;
+  padding-left: 50px;
+  margin-top: -15px;
+  color: rgb(173, 171, 171);
 }
-nav a:hover, nav a:focus {
-    border-bottom: 3px solid rgb(173, 171, 171);
+nav {
+  flex-wrap: nowrap;
+  width: 70%;
+  margin: auto;
+  justify-content: left;
+  top: 100px;
+  min-width: 1000px;
+  display: flex;
+  left: 15%;
+  right: 15%;
 }
-nav a.active{
-    border-bottom: 3px solid rgb(173, 171, 171);
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1200px;
 }
-.destacados{
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    white-space: nowrap;
-    padding-top: 150px;
+nav li {
+  margin: 0 10px;
+  margin-top: 20px;
 }
-.destacados h2{
-    font-size: 18pt;
-    margin-bottom: 0px;
-    width: 100%;
+nav a {
+  color: rgb(173, 171, 171);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16pt;
+  letter-spacing: 1px;
 }
-.destacados img{
-    width: 100%;
-    max-width: 250px;
-    height: 150px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin: 10px;
+nav a:hover,
+nav a:focus {
+  border-bottom: 2px solid rgb(173, 171, 171);
 }
-.combos{
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+nav a.active {
+  border-bottom: 2px solid rgb(173, 171, 171);
 }
-.combos h2{
-    font-size: 18pt;
-    margin-bottom: 0px;
+.contenido {
+  width: 70%;
+  margin: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding-top: 160px;
+  height: calc(100vh - 160px);
+  box-sizing: content-box;
 }
-.combos p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16pt;
-    width: 100%;
-    margin:auto;
-    line-height: 60px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
+.destacados {
+  width: 100%;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  white-space: nowrap;
 }
-.combos p img{
-    margin-right: 10px;
-    width: 75px;
-    height: 75px;
-    border-radius: 10px;
-    object-fit: cover;
-    position:relative;
+.destacados h2 {
+  font-size: 18pt;
+  margin-bottom: 0px;
+  width: 100%;
 }
-.medianas{
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+.destacados img {
+  width: 100%;
+  max-width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 10px;
 }
-.medianas h2{
-    font-size: 18pt;
-    margin-bottom: 0px;
+.combos {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
-.medianas p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16pt;
-    width: 100%;
-    margin:auto;
-    line-height: 60px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
+.combos h2 {
+  font-size: 18pt;
+  margin-bottom: 0px;
 }
-.medianas p img{
-    margin-right: 10px;
-    width: 75px;
-    height: 75px;
-    border-radius: 10px;
-    object-fit: cover;
-    position:relative;
+.combos p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  width: 100%;
+  margin: auto;
+  line-height: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.combos p img {
+  margin-right: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.medianas {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+.medianas h2 {
+  font-size: 18pt;
+  margin-bottom: 0px;
+}
+.medianas p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  width: 100%;
+  margin: auto;
+  line-height: 60px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.medianas p img {
+  margin-right: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
 }

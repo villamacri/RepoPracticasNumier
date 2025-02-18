@@ -4,48 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masakali Pizza - Cristo de Burgos</title>
-    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/pagina_inicio.css" />
-    <script src="../js/pagina_inicio.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-    <header>
-      <h1>Masakali Pizza - Cristo de Burgos</h1>
-      <p>Plaza Cristo de Burgos,1 - 41003 Sevilla</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#combos">COMBOS</a></li>
-        <li><a href="#medianas">MEDIANAS</a></li>
-        <li><a href="#xxl">XXL</a></li>
-        <li><a href="#postres">POSTRES</a></li>
-        <li><a href="#bebidas">BEBIDAS</a></li>
-        <li><a href="#xxl-mitades">XXL Por mitades</a></li>
-        <li><a href="#helados">HELADOS</a></li>
-      </ul>
-    </nav>
-    <div class="destacados">
-      <h2>Productos destacados</h2>
-      <hr />
-      <img src="../img/postre1.jpg" />
-      <img src="../img/postre3.jpg" />
+    <div class="encabezado">
+      <header>
+        <div class="menu">
+          <div class="titulos">
+            <h1>
+              <i
+                title="Abrir el menú de navegación"
+                class="bi bi-list"
+                id="menu-toggle"
+              ></i>
+              Masakali Pizza - Cristo de Burgos
+            </h1>
+            <p class="margen">Plaza Cristo de Burgos,1 - 41003 Sevilla</p>
+          </div>
+          <div class="iconos-derecha">
+            <i class="bi bi-funnel"></i>
+            <i class="bi bi-search"></i>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#combos">COMBOS</a></li>
+          <li><a href="#medianas">MEDIANAS</a></li>
+          <li><a href="#xxl">XXL</a></li>
+          <li><a href="#postres">POSTRES</a></li>
+          <li><a href="#bebidas">BEBIDAS</a></li>
+          <li><a href="#xxl-mitades">XXL Por mitades</a></li>
+          <li><a href="#helados">HELADOS</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="combos" class="combos">
-      <h2>COMBOS</h2>
-      <hr/>
-      <p><img src="../img/combo1.jpg" alt="combo1" />Serranito Alioli + Happy Hippo</p>
-      <p><img src="../img/combo2.jpg" alt="combo2" />Camera + Ferrero</p>
-      <p><img src="../img/combo3.jpg" alt="combo3" />Cinco quesos + Kinder</p>
-      <p><img src="../img/combo4.jpg" alt="combo4" />York + Cheesecake con dulce de leche</p>
+    <div class="contenido">
+      <div class="destacados">
+        <h2>Productos destacados</h2>
+        <hr />
+        <img src="../img/postre1.jpg" />
+        <img src="../img/postre3.jpg" />
+      </div>
+      <div id="combos" class="combos">
+        <h2>COMBOS</h2>
+        <hr />
+        <p>
+          <img src="../img/combo1.jpg" alt="combo1" />Serranito Alioli + Happy
+          Hippo
+        </p>
+        <p><img src="../img/combo2.jpg" alt="combo2" />Camera + Ferrero</p>
+        <p><img src="../img/combo3.jpg" alt="combo3" />Cinco quesos + Kinder</p>
+        <p>
+          <img src="../img/combo4.jpg" alt="combo4" />York + Cheesecake con
+          dulce de leche
+        </p>
+      </div>
+      <div class="combos" id="medianas">
+        <h2>MEDIANAS</h2>
+        <hr />
+        <p><img src="../img/pizzaPers.jpg" />MEDIANA AL GUSTO</p>
+        <p><img src="../img/pizza1.jpg" />Aceituna negra</p>
+        <p><img src="../img/pizza2.jpg" />Ibérica</p>
+        <p><img src="../img/pizza3.jpg" />Prosciutto</p>
+        <p><img src="../img/pizza4.jpg" />Pepperoni</p>
+      </div>
+      <div id="xxl" class="combos">
+        <h2>XXL</h2>
+        <hr />
+        <p><img src="../img/pizza1.jpg" />XXL Pollo Barbacoa</p>
+        <p><img src="../img/pizza2.jpg" />XXL Cuatro estaciones</p>
+        <p><img src="../img/pizza3.jpg" />XXL Mariscos</p>
+        <p><img src="../img/pizza4.jpg" />XXL Vegetariana</p>
+      </div>
+
+      <div id="postres" class="combos">
+        <h2>POSTRES</h2>
+        <hr />
+        <p><img src="../img/postre1.jpg" />Brownie con helado</p>
+        <p><img src="../img/postre2.jpg" />Tarta de manzana</p>
+        <p><img src="../img/postre3.jpg" />Cheesecake de frutos rojos</p>
+        <p><img src="../img/postre4.jpg" />Mousse de chocolate</p>
+      </div>
+
+      <div id="bebidas" class="combos">
+        <h2>BEBIDAS</h2>
+        <hr />
+        <p><img src="../img/bebida1.jpg" />Coca-Cola</p>
+        <p><img src="../img/bebida2.jpg" />Fanta Naranja</p>
+        <p><img src="../img/bebida5.jpg" />Agua Mineral</p>
+        <p><img src="../img/bebida4.jpg" />Cerveza</p>
+      </div>
+
+      <div id="xxl-mitades" class="combos">
+        <h2>XXL Por Mitades</h2>
+        <hr />
+        <p>Pizza XXL por mitades</p>
+      </div>
+
+      <div id="helados" class="combos">
+        <h2>HELADOS</h2>
+        <hr />
+        <p><img src="../img/helado1.jpg" />Helado de vainilla</p>
+        <p><img src="../img/helado2.jpg" />Helado de chocolate</p>
+        <p><img src="../img/helado3.jpg" />Helado de fresa</p>
+        <p><img src="../img/helado4.jpg" />Helado de menta</p>
+      </div>
     </div>
-    <div class="medianas">
-      <h2>MEDIANAS</h2>
-      <hr/>
-      <p><img src="../img/pizzaPers.jpg"/>MEDIANA AL GUSTO</p>
-      <p><img src="../img/pizza1.jpg"/>Aceituna negra</p>
-      <p><img src="../img/pizza2.jpg"/>Ibérica</p>
-      <p><img src="../img/pizza3.jpg"/>Prosciutto</p>
-      <p><img src="../img/pizza4.jpg"/>Pepperoni</p>
-    </div>
+    <script src="../js/pagina_inicio.js"></script>
   </body>
 </html>
