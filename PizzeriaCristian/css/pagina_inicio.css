@@ -1,18 +1,88 @@
+
 .encabezado {
   position: fixed;
   background-color: white;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
 }
-
+.sidebar {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 1003;
+  background-color: white;
+  border-top-right-radius: 10px;
+  transform:translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.sidebar.open{
+  transform:translateX(0);
+}
+.sidebar ul {
+  list-style: none;
+  margin-left: -10%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(65, 62, 62);
+  font-size: 13pt;
+}
+.sidebar ul li {
+  position: relative;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+.sidebar hr {
+  display: flex;
+  width: 90%;
+  margin: 0;
+  align-self: flex-start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.sidebar .logo {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/fondo.png);
+  background-size: cover;
+  background-position: 0px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 16%;
+  display: flex;
+}
+.sidebar .logo p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  color: white;
+  margin-left: 5%;
+  font-weight: 600;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1002;
+  transition: opacity 0.3s ease, visibility 0.3 ease;
+}
+.sidebar.open ~ .overlay{
+  opacity: 1;
+  visibility: visible;
+}
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/fondo.png);
   width: 70%;
@@ -24,7 +94,8 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   color: white;
-  padding-bottom: 3%;
+  padding-bottom: 55px;
+  box-sizing: border-box;
   position: relative;
 }
 header .titulos i {
@@ -48,7 +119,7 @@ header h1 p {
   font-size: 8pt;
 }
 
-.iconos-derecha{
+.iconos-derecha {
   position: relative;
   transform: translateY(-50%);
   right: 20px;
@@ -59,56 +130,72 @@ header h1 p {
   display: flex;
   align-items: center;
 }
-.iconos-derecha i{
+.iconos-derecha i {
   border-radius: 50%;
   padding: 5px;
 }
 header .iconos-derecha i:hover {
-  background-color:rgb(47, 71, 47);
+  background-color: rgb(47, 71, 47);
 }
-nav {
-  position: relative;
+header nav {
+  margin-top: 260px;
+  position: fixed;
   display: flex;
   flex-wrap: nowrap;
-  width: 70%;
-  margin: auto;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   box-sizing: content-box;
-  
 }
-nav ul {
+header nav ul {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 0px;
   margin: 0;
   width: 100%;
   min-width: 900px; /* Se reduce para mayor flexibilidad */
   max-width: 1200px;
 }
-nav li {
+header nav li {
   margin-right: 30px;
   margin-top: 20px;
 }
-nav a {
+header nav a {
   color: rgb(173, 171, 171);
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-size: 14pt;
   letter-spacing: 1px;
 }
-nav a:hover,
+header nav a:hover,
 nav a:focus {
   border-bottom: 2px solid rgb(173, 171, 171);
 }
-nav a.active {
+header nav a.active {
   border-bottom: 2px solid rgb(173, 171, 171);
 }
+.column-dcha{
+  display: flex;
+  position:fixed;
+  width: 15%;
+  height: 100%;
+  background-color:white ;
+  z-index: 1004;
+  top: 0;
+  right: 0;
+}
+.sidebar.open ~ .overlay, 
+.sidebar.open ~ .column-dcha {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.column-dcha.darken {
+  background-color: #7f7f7f;
+}
+
 .contenido {
   width: 70%;
   margin: auto;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  padding-top: 160px;
+  padding-top: 200px;
   height: calc(100vh - 160px);
   box-sizing: content-box;
 }
@@ -193,6 +280,8 @@ nav a.active {
   nav {
     width: 100%;
     justify-content: center;
+    margin: auto;
+    position: relative;
   }
 
   nav ul {
@@ -216,7 +305,9 @@ nav a.active {
     position: absolute;
     right: 40px;
   }
-
+  .column-dcha{
+   display: none;
+  }
   .contenido {
     width: 100%;
     margin: auto;

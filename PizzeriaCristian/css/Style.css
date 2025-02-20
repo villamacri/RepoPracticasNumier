@@ -54,7 +54,6 @@ body {
   font-weight: 700;
   margin: auto;
   margin-top: 10px;
-  text-align: right;
   width: 80%;
   margin-bottom: 25px;
 }
@@ -85,6 +84,9 @@ hr {
 .language a img {
   width: 2%;
   min-width: 40px;
+}
+.language a.active{
+  border: 2px solid white;
 }
 .boton {
   width: 20%;

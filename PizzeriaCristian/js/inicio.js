@@ -1,10 +1,22 @@
-document.addEventListener("DOMContentLoaded", function(){
-    document.querySelectorAll('nav a').forEach((link) =>{
-        link.addEventListener('click', function(){
-            document.querySelector('nav a.active').classList.remove('active');
-            this.classList.add('active');
-        });
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("nav a").forEach((link) => {
+    link.addEventListener("click", function () {
+      document.querySelector("nav a.active").classList.remove("active");
+      this.classList.add("active");
     });
+  });
 });
 
-document.querySelectorAll("bi bi-list")
+const menuToggle = document.getElementById("menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+const columnDcha = document.querySelector(".column-dcha");
+
+function toggleMenu() {
+    sidebar.classList.toggle("open");
+    overlay.classList.toggle("visible");
+    columnDcha.classList.toggle("darken"); // Agregar clase para oscurecer
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
