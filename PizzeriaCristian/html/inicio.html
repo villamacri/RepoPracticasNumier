@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="encabezado">
@@ -17,14 +21,26 @@
         <div class="logo"><p>Masakali Pizza - Cristo de Burgos</p></div>
         <ul>
           <li><a>Sobre nosotros</a></li>
-          <hr/>
+          <hr />
           <li><a>Idioma</a></li>
-          <hr/>
-          <li><a>Términos legales, condiciones y cookies</a></li>
-          <hr/>
+          <hr />
+          <li>
+            <a>Términos legales, condiciones y cookies <i class="bi bi-caret-down-fill arrow" id="submenu-toggle"></i></a>
+            <ul class="submenu">
+              <hr/>
+              <li>Términos y condiciones</li>
+              <hr/>
+              <li>Aviso legal</li>
+              <hr/>
+              <li>Politicas de privacidad</li>
+              <hr/>
+              <li>Políticas de cookies</li>
+            </ul>
+          </li>
+          <hr />
           <li><a>Alérgenos</a></li>
-          <hr/>
-          <li><a>Ir a la pantalla de inicio</a></li>
+          <hr />
+          <li><a href="../html/index.html">Ir a la pantalla de inicio</a></li>
         </ul>
       </div>
       <div class="overlay"></div>
@@ -35,8 +51,10 @@
             class="bi bi-list"
             id="menu-toggle"
           ></i>
-          <h1>Masakali Pizza - Cristo de Burgos<p class="margen">Plaza Cristo de Burgos,1 - 41003 Sevilla</p></h1>
-          
+          <h1>
+            Masakali Pizza - Cristo de Burgos
+            <p class="margen">Plaza Cristo de Burgos,1 - 41003 Sevilla</p>
+          </h1>
         </div>
         <div class="iconos-derecha">
           <i class="bi bi-funnel"></i>
@@ -65,8 +83,8 @@
       </div>
       <div id="combos" class="combos">
         <h2>COMBOS</h2>
-        <hr/>
-        
+        <hr />
+
         <p>
           <img src="../img/combo1.jpg" alt="combo1" />Serranito Alioli + Happy
           Hippo
