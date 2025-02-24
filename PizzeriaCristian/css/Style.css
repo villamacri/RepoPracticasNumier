@@ -96,6 +96,7 @@ hr {
   text-align: center;
 }
 .boton button {
+  cursor: pointer;
   position: relative;
   background-color: rgb(25, 194, 216);
   font-size: 15pt;
