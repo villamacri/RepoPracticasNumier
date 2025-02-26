@@ -18,7 +18,9 @@
   <body>
     <div id="overlay"></div>
     <div class="intolerancia" id="ventana-intolerancia">
-      <p class="msj1"><i class="bi bi-x" id="x"></i>Selecciona tus alergias e intolerancias</p>
+      <p class="msj1">
+        <i class="bi bi-x" id="x"></i>Selecciona tus alergias e intolerancias
+      </p>
       <img src="../img/intolerancia1.png" alt="intolerancia al trigo" />
       <img src="../IMG/intolerancia2.png" alt="intolerancia a la lactosa" />
       <img src="../IMG/intolerancia3.png" alt="intolerancia al apio" />
@@ -28,36 +30,28 @@
       />
       <img src="../IMG/intolerancia5.jpg" alt="intolerancia al huevo" />
       <img src="../IMG/intolerancia6.png" alt="intolerancia al pescado" />
-      <img
-        src="../IMG/intolerancia7.png"
-        alt="intolerancia a los mariscos"
-      />
+      <img src="../IMG/intolerancia7.png" alt="intolerancia a los mariscos" />
       <img src="../IMG/intolerancia8.png" alt="intolerancia al cacahuete" />
       <img src="../IMG/intolerancia9.jpg" alt="intolerancia a la soja" />
       <img
         src="../IMG/intolerancia10.png"
         alt="intolerancia a la Dióxido de Azufre y Sulfitos"
       />
-      <img
-        src="../IMG/intolerancia11.png"
-        alt="intolerancia a las mostaza"
-      />
+      <img src="../IMG/intolerancia11.png" alt="intolerancia a las mostaza" />
       <img
         src="../IMG/intolerancia12.png"
         alt="intolerancia a los granos de sésamo"
       />
       <img src="../IMG/intolerancia13.png" alt="intolerancia al altramuz" />
-      <img
-        src="../IMG/intolerancia14.png"
-        alt="intolerancia a los moluscos"
-      />
-      <p class="msj2"><span class="asterisco">*</span> Solo se mostraran los productos sin los alérgenos seleccionados</p>
+      <img src="../IMG/intolerancia14.png" alt="intolerancia a los moluscos" />
+      <p class="msj2">
+        <span class="asterisco">*</span> Solo se mostraran los productos sin los
+        alérgenos seleccionados
+      </p>
     </div>
     <div id="ventanaBusqueda">
       <a id="cerrar-buscador"><i class="bi bi-arrow-left"></i></a>
-      <div class="barra-busqueda">
-        <i class="bi bi-search"></i><input></input>
-      </div>
+      <div class="barra-busqueda"><i class="bi bi-search"></i><input /></div>
       <p>Busca cualquier producto</p>
     </div>
     <div class="encabezado">
@@ -69,15 +63,18 @@
           <li><a>Idioma</a></li>
           <hr />
           <li>
-            <a>Términos legales, condiciones y cookies <i class="bi bi-caret-down-fill arrow" id="submenu-toggle"></i></a>
+            <a
+              >Términos legales, condiciones y cookies
+              <i class="bi bi-caret-down-fill arrow" id="submenu-toggle"></i
+            ></a>
             <ul class="submenu">
-              <hr/>
+              <hr />
               <li>Términos y condiciones</li>
-              <hr/>
+              <hr />
               <li>Aviso legal</li>
-              <hr/>
+              <hr />
               <li>Politicas de privacidad</li>
-              <hr/>
+              <hr />
               <li>Políticas de cookies</li>
             </ul>
           </li>
@@ -101,6 +98,7 @@
           </h1>
         </div>
         <div class="iconos-derecha">
+          <i class="bi bi-cart" id="abrir-carrito"></i>
           <i class="bi bi-funnel" id="abrir-alergenos"></i>
           <i class="bi bi-search" id="abrir-buscador"></i>
         </div>
@@ -133,65 +131,289 @@
           <img src="../img/combo1.jpg" alt="combo1" />Serranito Alioli + Happy
           Hippo
         </p>
+        <p class="precio">5.50€</p>
+        <button
+          class="btn-agregar"
+          onclick="agregarAlCarrito('Serranito Alioli + Happy Hippo', 5.50, '../img/combo1.jpg')" 
+        >
+          Agregar
+        </button>
+
         <p><img src="../img/combo2.jpg" alt="combo2" />Camera + Ferrero</p>
+        <p class="precio">6.50€</p>
+        <button
+          class="btn-agregar"
+          onclick="agregarAlCarrito('Camera + Ferrero', 6.50, '../img/combo2.jpg')"
+        >
+          Agregar
+        </button>
+
         <p><img src="../img/combo3.jpg" alt="combo3" />Cinco quesos + Kinder</p>
+        <p class="precio">9.50€</p>
+        <button
+          class="btn-agregar"
+          onclick="agregarAlCarrito('Cinco quesos + Kinder', 9.50, '../img/combo3.jpg')"
+        >
+          Agregar
+        </button>
+
         <p>
           <img src="../img/combo4.jpg" alt="combo4" />York + Cheesecake con
           dulce de leche
         </p>
-      </div>
-      <div class="combos" id="medianas">
-        <h2>MEDIANAS</h2>
-        <hr />
-        <p><img src="../img/pizzaPers.jpg" />MEDIANA AL GUSTO</p>
-        <p><img src="../img/pizza1.jpg" />Aceituna negra</p>
-        <p><img src="../img/pizza2.jpg" />Ibérica</p>
-        <p><img src="../img/pizza3.jpg" />Prosciutto</p>
-        <p><img src="../img/pizza4.jpg" />Pepperoni</p>
-      </div>
-      <div id="xxl" class="combos">
-        <h2>XXL</h2>
-        <hr />
-        <p><img src="../img/pizza1.jpg" />XXL Pollo Barbacoa</p>
-        <p><img src="../img/pizza2.jpg" />XXL Cuatro estaciones</p>
-        <p><img src="../img/pizza3.jpg" />XXL Mariscos</p>
-        <p><img src="../img/pizza4.jpg" />XXL Vegetariana</p>
-      </div>
+        <p class="precio">9.50€</p>
+        <button
+          class="btn-agregar"
+          onclick="agregarAlCarrito('York + Cheesecake con dulce de leche', 9.50, '../img/combo4.jpg')"
+        >
+          Agregar
+        </button>
 
-      <div id="postres" class="combos">
-        <h2>POSTRES</h2>
-        <hr />
-        <p><img src="../img/postre1.jpg" />Brownie con helado</p>
-        <p><img src="../img/postre2.jpg" />Tarta de manzana</p>
-        <p><img src="../img/postre3.jpg" />Cheesecake de frutos rojos</p>
-        <p><img src="../img/postre4.jpg" />Mousse de chocolate</p>
-      </div>
+        <div class="combos" id="medianas">
+          <h2>MEDIANAS</h2>
+          <hr />
+          <p>
+            <img src="../img/pizzaPers.jpg" alt="mediana0" />MEDIANA AL GUSTO
+          </p>
+          <p class="precio">8.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('MEDIANA AL GUSTO', 8.50)"
+          >
+            Agregar
+          </button>
 
-      <div id="bebidas" class="combos">
-        <h2>BEBIDAS</h2>
-        <hr />
-        <p><img src="../img/bebida1.jpg" />Coca-Cola</p>
-        <p><img src="../img/bebida2.jpg" />Fanta Naranja</p>
-        <p><img src="../img/bebida5.jpg" />Agua Mineral</p>
-        <p><img src="../img/bebida4.jpg" />Cerveza</p>
-      </div>
+          <p><img src="../img/pizza1.jpg" alt="mediana1" />Aceituna negra</p>
+          <p class="precio">8.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Aceituna negra', 8.50, '../img/pizza1.jpg')"
+          >
+            Agregar
+          </button>
 
-      <div id="xxl-mitades" class="combos">
-        <h2>XXL Por Mitades</h2>
-        <hr />
-        <p>Pizza XXL por mitades</p>
-      </div>
+          <p><img src="../img/pizza2.jpg" alt="mediana2" />Ibérica</p>
+          <p class="precio">8.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Ibérica', 8.50, '../img/pizza2.jpg')"
+          >
+            Agregar
+          </button>
 
-      <div id="helados" class="combos">
-        <h2>HELADOS</h2>
-        <hr />
-        <p><img src="../img/helado1.jpg" />Helado de vainilla</p>
-        <p><img src="../img/helado2.jpg" />Helado de chocolate</p>
-        <p><img src="../img/helado3.jpg" />Helado de fresa</p>
-        <p><img src="../img/helado4.jpg" />Helado de menta</p>
+          <p><img src="../img/pizza3.jpg" alt="mediana3" />Prosciutto</p>
+          <p class="precio">8.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Prosciutto', 8.50, '../img/pizza3.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/pizza4.jpg" alt="mediana4" />Pepperoni</p>
+          <p class="precio">8.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Pepperoni', 8.50, '../img/pizza4.jpg')"
+          >
+            Agregar
+          </button>
+        </div>
+        <div id="xxl" class="combos">
+          <h2>XXL</h2>
+          <hr />
+          <p><img src="../img/pizza1.jpg" alt="xxl1" />XXL Pollo Barbacoa</p>
+          <p class="precio">12.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('XXL Pollo Barbacoa', 12.50, '../img/pizza1.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/pizza2.jpg" alt="xxl2" />XXL Cuatro estaciones</p>
+          <p class="precio">12.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('XXL Cuatro estaciones', 12.50, '../img/pizza2.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/pizza3.jpg" alt="xxl3" />XXL Mariscos</p>
+          <p class="precio">12.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('XXL Mariscos', 12.50, '../img/pizza3.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/pizza4.jpg" alt="xxl4" />XXL Vegetariana</p>
+          <p class="precio">12.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('XXL Vegetariana', 12.50, '../img/pizza4.jpg')"
+          >
+            Agregar
+          </button>
+        </div>
+
+        <div id="postres" class="combos">
+          <h2>POSTRES</h2>
+          <hr />
+          <p>
+            <img src="../img/postre1.jpg" alt="postre1" />Brownie con helado
+          </p>
+          <p class="precio">4.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Brownie con helado', 4.50, '../img/postre1.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/postre2.jpg" alt="postre2" />Tarta de manzana</p>
+          <p class="precio">6.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Tarta de manzana', 6.50, '../img/postre2.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p>
+            <img src="../img/postre3.jpg" alt="postre3" />Cheesecake de frutos
+            rojos
+          </p>
+          <p class="precio">5.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Cheesecake de frutos rojos', 5.50, '../img/postre3.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p>
+            <img src="../img/postre4.jpg" alt="postre4" />Mousse de chocolate
+          </p>
+          <p class="precio">4.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Mousse de chocolate', 4.50, '../img/postre4.jpg')"
+          >
+            Agregar
+          </button>
+        </div>
+
+        <div id="bebidas" class="combos">
+          <h2>BEBIDAS</h2>
+          <hr />
+          <p><img src="../img/bebida1.jpg" alt="bebida1" />Coca-Cola</p>
+          <p class="precio">2.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Coca-Cola', 2.50, '../img/bebida1.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/bebida2.jpg" alt="bebida2" />Fanta Naranja</p>
+          <p class="precio">2.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Fanta Naranja', 2.50, '../img/bebida2.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/bebida5.jpg" alt="bebida3" />Agua Mineral</p>
+          <p class="precio">2.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Agua Mineral', 2.50, '../img/bebida5.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/bebida4.jpg" alt="bebida4" />Cerveza</p>
+          <p class="precio">2.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Cerveza', 2.50, '../img/bebida4.jpg')"
+          >
+            Agregar
+          </button>
+        </div>
+
+        <div id="xxl-mitades" class="combos">
+          <h2>XXL Por Mitades</h2>
+          <hr />
+          <p>Pizza XXL por mitades</p>
+        </div>
+
+        <div id="helados" class="combos">
+          <h2>HELADOS</h2>
+          <hr />
+          <p>
+            <img src="../img/helado1.jpg" alt="helado1" />Helado de vainilla
+          </p>
+          <p class="precio">3.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Helado de vainilla', 3.50, '../img/helado1.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p>
+            <img src="../img/helado2.jpg" alt="helado2" />Helado de chocolate
+          </p>
+          <p class="precio">3.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Helado de chocolate', 3.50, '../img/helado2.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/helado3.jpg" alt="helado3" />Helado de fresa</p>
+          <p class="precio">3.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Helado de fresa', 3.50, '../img/helado3.jpg')"
+          >
+            Agregar
+          </button>
+
+          <p><img src="../img/helado4.jpg" alt="helado4" />Helado de menta</p>
+          <p class="precio">3.50€</p>
+          <button
+            class="btn-agregar"
+            onclick="agregarAlCarrito('Helado de menta', 3.50, '../img/helado4.jpg')"
+          >
+            Agregar
+          </button>
+        </div>
+      </div>
+      <div class="modal" id="modalCarrito">
+        <div class="modal-contenido">
+          <h2><i class="bi bi-cart" id="abrir-carrito"></i>
+            Carrito de Compras</h2>
+          <ul id="listaCarrito">
+            <!-- Los productos se agregan aquí mediante JavaScript -->
+          </ul>
+          <div class="total">
+            <p>Total: <span id="total">0€</span></p>
+          </div>
+          <button id="cerrar-carrito">Cerrar</button>
+          <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
       </div>
     </div>
-    <a id="flecha" onclick="scrollToTop()"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <a id="flecha" onclick="scrollToTop()"
+      ><i class="bi bi-arrow-up-circle-fill"></i 
+    ></a>
     <script src="../js/inicio.js"></script>
   </body>
 </html>
