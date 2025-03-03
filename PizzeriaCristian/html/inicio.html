@@ -58,28 +58,72 @@
       <div class="sidebar">
         <div class="logo"><p>Masakali Pizza - Cristo de Burgos</p></div>
         <ul>
-          <li><a>Sobre nosotros</a></li>
+          <li>
+            <a
+              href="https://www.numier.com/carta-digital/carta/masakali/sobreNosotros"
+              target="_blank"
+              >Sobre nosotros</a
+            >
+          </li>
           <hr />
-          <li><a>Idioma</a></li>
+          <li>
+            <a>Idioma<i class="bi bi-caret-down-fill arrow1" id="submenu-idioma"></i></a>
+            <ul class="submenu1">
+              <hr />
+              <li>Español</li>
+              <hr />
+              <li>Ingles</li>
+            </ul>
+          </li>
           <hr />
           <li>
             <a
               >Términos legales, condiciones y cookies
-              <i class="bi bi-caret-down-fill arrow" id="submenu-toggle"></i
+              <i class="bi bi-caret-down-fill arrow2" id="submenu-toggle"></i
             ></a>
-            <ul class="submenu">
+            <ul class="submenu2">
               <hr />
-              <li>Términos y condiciones</li>
+              <li>
+                <a
+                  href="https://www.numier.com/carta-digital/carta/masakali/termsAndConditions"
+                  target="_blank"
+                  >Términos y condiciones</a
+                >
+              </li>
               <hr />
-              <li>Aviso legal</li>
+              <li>
+                <a
+                  href="https://www.numier.com/carta-digital/carta/masakali/legalNotice"
+                  target="_blank"
+                  >Aviso legal</a
+                >
+              </li>
               <hr />
-              <li>Politicas de privacidad</li>
+              <li>
+                <a
+                  href="https://www.numier.com/carta-digital/carta/masakali/privacyPolicy"
+                  target="_blank"
+                  >Politicas de privacidad</a
+                >
+              </li>
               <hr />
-              <li>Políticas de cookies</li>
+              <li>
+                <a
+                  href="https://www.numier.com/carta-digital/carta/masakali/cookiePolicy"
+                  target="_blank"
+                  >Políticas de cookies</a
+                >
+              </li>
             </ul>
           </li>
           <hr />
-          <li><a>Alérgenos</a></li>
+          <li>
+            <a
+              href="https://www.numier.com/carta-digital/carta/masakali/allergens"
+              target="_blank"
+              >Alérgenos</a
+            >
+          </li>
           <hr />
           <li><a href="../html/index.html">Ir a la pantalla de inicio</a></li>
         </ul>
@@ -134,7 +178,7 @@
         <p class="precio">5.50€</p>
         <button
           class="btn-agregar"
-          onclick="agregarAlCarrito('Serranito Alioli + Happy Hippo', 5.50, '../img/combo1.jpg')" 
+          onclick="agregarAlCarrito('Serranito Alioli + Happy Hippo', 5.50, '../img/combo1.jpg')"
         >
           Agregar
         </button>
@@ -398,8 +442,9 @@
       </div>
       <div class="modal" id="modalCarrito">
         <div class="modal-contenido">
-          <h2><i class="bi bi-cart" id="abrir-carrito"></i>
-            Carrito de Compras</h2>
+          <h2>
+            <i class="bi bi-cart" id="abrir-carrito"></i> Carrito de Compras
+          </h2>
           <ul id="listaCarrito">
             <!-- Los productos se agregan aquí mediante JavaScript -->
           </ul>
@@ -412,7 +457,7 @@
       </div>
     </div>
     <a id="flecha" onclick="scrollToTop()"
-      ><i class="bi bi-arrow-up-circle-fill"></i 
+      ><i class="bi bi-arrow-up-circle-fill"></i
     ></a>
     <script src="../js/inicio.js"></script>
   </body>

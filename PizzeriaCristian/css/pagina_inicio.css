@@ -139,7 +139,7 @@
   text-decoration: none;
   color: black;
 }
-.sidebar ul li ul.submenu {
+.sidebar ul li ul.submenu1 {
   max-height: 0;
   overflow: hidden;
   list-style: none;
@@ -148,17 +148,17 @@
   margin: 0;
   transition: max-height 0.3s ease;
 }
-.sidebar ul li ul.submenu.open-submenu {
+.sidebar ul li ul.submenu1.open-submenu {
   max-height: 200px; /* Muestra el submenú cuando tiene la clase 'open-submenu' */
 }
-.sidebar ul li ul.submenu li a {
+.sidebar ul li ul.submenu1 li a {
   padding: 10px;
   white-space: nowrap;
 }
-.arrow {
+.arrow1 {
   transition: transform 0.3s ease;
 }
-.open-submenu .arrow {
+.open-submenu .arrow1 {
   transform: rotate(180deg);
 }
 .sidebar hr {
@@ -169,7 +169,40 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.sidebar ul li ul.submenu hr {
+.sidebar ul li ul.submenu1 hr {
+  width: 100%;
+}
+.sidebar ul li ul.submenu1.open-submenu1 {
+  max-height: 200px; /* Muestra el submenú cuando tiene la clase 'open-submenu' */
+}
+.sidebar ul li ul.submenu1 li a {
+  padding: 10px;
+  white-space: nowrap;
+}
+.sidebar ul li ul.submenu2 {
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  transition: max-height 0.3s ease;
+}
+.sidebar ul li ul.submenu2.open-submenu2 {
+  max-height: 200px; /* Muestra el submenú cuando tiene la clase 'open-submenu' */
+}
+.sidebar ul li ul.submenu2 li a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.arrow2 {
+  transition: transform 0.3s ease;
+}
+.open-submenu2 .arrow2 {
+  transform: rotate(180deg);
+}
+.sidebar ul li ul.submenu2 hr {
   width: 100%;
 }
 .sidebar .logo {

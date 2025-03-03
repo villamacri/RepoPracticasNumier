@@ -2,7 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("nav a").forEach((link) => {
     link.addEventListener("click", function () {
-      document.querySelector("nav a.active").classList.remove("active");
+      const activeLink = document.querySelector("nav a.active");
+      if (activeLink) activeLink.classList.remove("active");
       this.classList.add("active");
     });
   });
@@ -21,15 +22,31 @@ document.addEventListener("DOMContentLoaded", function () {
   menuToggle.addEventListener("click", toggleMenu);
   overlay.addEventListener("click", toggleMenu);
 
-  const submenuToggle = document.getElementById("submenu-toggle");
-  const submenu = document.querySelector(".submenu");
+  // Submenú 1 (Idioma)
+  const submenuIdioma = document.getElementById("submenu-idioma");
+  const submenu1 = document.querySelector(".submenu1");
 
-  function toggleSubmenu() {
-    submenu.classList.toggle("open-submenu");
-    submenuToggle.querySelector(".arrow").classList.toggle("open-submenu");
+  if (submenuIdioma) {
+    submenuIdioma.addEventListener("click", function () {
+      submenu1.classList.toggle("open-submenu1");
+      const arrow1 = submenuIdioma.querySelector(".arrow1");
+      if (arrow1) arrow1.classList.toggle("open-submenu1");
+    });
   }
-  submenuToggle.addEventListener("click", toggleSubmenu);
+
+  // Submenú 2 (Otro menú)
+  const submenuToggle = document.getElementById("submenu-toggle");
+  const submenu2 = document.querySelector(".submenu2");
+
+  if (submenuToggle) {
+    submenuToggle.addEventListener("click", function () {
+      submenu2.classList.toggle("open-submenu2");
+      const arrow2 = submenuToggle.querySelector(".arrow2");
+      if (arrow2) arrow2.classList.toggle("open-submenu2");
+    });
+  }
 });
+
 
 //Función para desplazar la página al principio
 function scrollToTop() {
