@@ -1,0 +1,56 @@
+body{
+    background-image: url("https:\/\/www.numier.com\/carta\/imagenfondos\/5374\/ImagenPrecarta_sinlogo.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+}
+#nameShow{
+    font-weight: 400; 
+    text-align: center;
+    margin-bottom: 1px; /* Adjust the value to control the spacing */
+    position: relative;
+    top: 100px; /* Adjust the value to position it above the logo */
+}
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 250px; /* Adjust the width as needed */
+    position: relative;
+    top: 100px; /* Adjust the value to move the logo up or down */
+}
+.enlace-comenzar{
+    width: 400px;
+    background-color: red;
+    font-size: 26pt;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 300px; /* Adjust the value to position it far below the logo */
+}
+.enlace-comenzar a{
+    color: white;
+    text-decoration: none;
+}
+.enlace-comenzar a p{
+    margin: 0;
+}
+.iconos{
+    display: flex;
+    width: 500px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    top: 320px;
+
+}
+.iconos img{
+    display: flex;
+    width: 50px;
+    margin: 0 10px;
+}

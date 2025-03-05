@@ -1,0 +1,164 @@
+/* Estilos Generales */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+h1{
+  margin-top: 0;
+  position: fixed;
+  padding-left: 60px ;
+  padding-top: 35px;
+  background-color:#e30613; /* Rojo Sevilla FC */
+  padding-bottom: 27px;
+  width: 100%;
+  z-index: 2;
+  color: white;
+}
+.logo{
+  position: fixed;
+  width: 170px;
+  z-index: 3;
+  margin-top: 70px;
+  margin-left: 60px;
+  
+}
+#category-links {
+  z-index: 2;
+  margin-top: 100px;
+  width: 250px; /* El ancho del sidebar */
+  background-color: white; /* Rojo Sevilla FC */
+  padding: 20px;
+  color: black;
+  padding-top: 150px;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  position: fixed; /* Fijo a la izquierda */
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Hacer scroll si hay demasiados enlaces */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para el sidebar */
+}
+
+#category-links a {
+  display: block; /* Hacer que cada enlace ocupe toda la línea */
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#category-links a:hover {
+  background-color: lightgray;
+}
+#main-content {
+  flex-grow: 1; /* Se expande para ocupar el espacio disponible */
+  padding-top: 120px; /* Espacio para que el título no lo tape */
+  padding-left: 280px; /* Empuja los productos a la derecha del sidebar */
+  padding-right: 20px; /* Espaciado a la derecha */
+  width: 100%;
+}
+/* Contenedor de Productos */
+
+/* Contenedor de Categorías */
+.category-container {
+  width: 80%;
+  z-index: 1;
+  min-width: 1000px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  scroll-margin-top: 120px;
+}
+
+.category-container h2 {
+  font-size: 1.8rem;
+  color: #e30613; /* Rojo Sevilla FC */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Contenedor de Productos dentro de cada Categoría (Utilizando grid) */
+.category-container .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crear columnas automáticas */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilo del Producto */
+.product {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título del Producto */
+.product h3 {
+  color: #e30613; /* Rojo Sevilla FC */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  height: 6rem; /* Fixed height */
+  overflow: hidden; /* Hide overflow text */
+}
+
+/* Descripción del Producto */
+.product p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  height: 7rem; /* Fixed height */
+  overflow: hidden; /* Hide overflow text */
+}
+
+/* Precios */
+.product ul {
+  width: 70%;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.product li {
+  background-color: red; /* Rojo Sevilla FC */
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.product li:hover {
+  background-color: #d30312;
+}
+
+/* Imagen del Producto */
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
