@@ -18,31 +18,28 @@ h1{
   background-color:#e30613; /* Rojo Sevilla FC */
   padding-bottom: 27px;
   width: 100%;
-  z-index: 2;
-  color: white;
-}
-.logo{
-  position: fixed;
-  width: 170px;
   z-index: 3;
-  margin-top: 70px;
-  margin-left: 60px;
-  
+  color: white;
 }
 #category-links {
   z-index: 2;
-  margin-top: 100px;
-  width: 250px; /* El ancho del sidebar */
+  max-width: 250px;
+  min-width: 212px;
   background-color: white; /* Rojo Sevilla FC */
   padding: 20px;
   color: black;
-  padding-top: 150px;
   height: 100vh; /* Ocupa toda la altura de la ventana */
   position: fixed; /* Fijo a la izquierda */
+  padding-top: 100px;
   top: 0;
   left: 0;
   overflow-y: auto; /* Hacer scroll si hay demasiados enlaces */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para el sidebar */
+}
+#category-links .logo{
+  width: 170px;
+  display: flex;
+  margin: 0 auto;
 }
 
 #category-links a {
@@ -65,18 +62,24 @@ h1{
   padding-top: 120px; /* Espacio para que el título no lo tape */
   padding-left: 280px; /* Empuja los productos a la derecha del sidebar */
   padding-right: 20px; /* Espaciado a la derecha */
-  width: 100%;
+  width: calc(100%-260px);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 /* Contenedor de Productos */
 
 /* Contenedor de Categorías */
 .category-container {
-  width: 80%;
-  z-index: 1;
-  min-width: 1000px;
-  margin-bottom: 30px;
-  margin-left: 40px;
+  width: 100%; /* Ocupará todo el espacio disponible */
+  min-width: unset; /* Eliminar restricción mínima */
+  max-width: 1200px; /* Ajusta un límite para evitar estiramientos excesivos */
+  margin-left: 0 auto;
+  padding: 0 20px; /* Añadir margen lateral */
   scroll-margin-top: 120px;
+}
+::-webkit-scrollbar{
+  width: 0;
 }
 
 .category-container h2 {
@@ -89,7 +92,7 @@ h1{
 /* Contenedor de Productos dentro de cada Categoría (Utilizando grid) */
 .category-container .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crear columnas automáticas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crear columnas automáticas */
   gap: 20px;
   justify-content: center;
 }
@@ -102,6 +105,9 @@ h1{
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
+  cursor: pointer;
+  max-width: 210px;
+  max-height: auto;
 }
 
 .product:hover {
